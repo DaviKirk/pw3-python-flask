@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The games</title>
+</head>
+
+<body>
+    <h1>Bem vindo de Games</h1>
+    <h4>Aproveite</h4>
+    <hr>
+    <button>
+        <a href="/">Ir Home page</a>
+    </button>
+    <hr>
+    <p>Game mais jogado no momento:</p>
+    <!-- Comentário HTML {# {variavel} #}-->
+    {# Exemplo de comentário no jinja2 #}
+    <ul>
+        <li>Título:  {{titulo}} </li>
+        <li>Ano: {{ano}}</li>
+        <li>categoria: {{categoria}}</li>
+    </ul>
+    <p>O jogo {{titulo}} tem {{2025 - ano}}.</p>
+    <hr>
+    <p>Estão Jogando no momento:</p>
+
+    <ol>
+        {% for jogador in jogadores: %}
+        <li>{{jogador}}</li>
+        {% endfor %}
+    </ol>
+
+    {# {{jogadores}} #}
+
+    <hr>
+    <p>Jogos disponiveis::</p>
+    <ol>
+        {% for jogos in games:%}
+        <li>{{jogos}}</li>
+        {% endfor %}
+    </ol>
+    <hr>
+</body>
+
+</html>
