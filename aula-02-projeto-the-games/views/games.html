@@ -36,17 +36,22 @@
         <li>{{jogador}}</li>
         {% endfor %}
     </ol>
-
-    {# {{jogadores}} #}
-
     <hr>
+    <h4>Entrar no jogo:</h4>
+    <form action="{{url_for('games')}}", method="POST">
+        <label for="jogador">Jogador:</label>
+        <input type="text" name="jogador">
+        <input type="submit">
+    </form>
+
+    <!-- <hr>
     <p>Jogos disponiveis::</p>
     <ol>
         {% for jogos in games:%}
         <li>{{jogos}}</li>
         {% endfor %}
     </ol>
-    <hr>
+    <hr> -->
 </body>
 
 </html>
