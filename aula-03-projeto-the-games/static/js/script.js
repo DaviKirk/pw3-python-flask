@@ -1,1 +1,2 @@
-alert('Se você esta lendo isso o js foi importado com sucesso!');
+// alert('Se você esta lendo isso o js foi importado com sucesso!');
+
