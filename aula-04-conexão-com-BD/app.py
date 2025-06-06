@@ -34,7 +34,7 @@ if __name__ == '__main__':
                                  user='root', 
                                  passwd='',
                                  charset='utf8mb4',
-                                 cursorclass='pymysql.cursors.DictCursor'
+                                 cursorclass=pymysql.cursors.DictCursor
                                  )
     
     #tentando criar o banco
@@ -59,4 +59,4 @@ if __name__ == '__main__':
         db.create_all()
     
     # Inicializando a aplicação flask
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='localhost', port=5000, debug=True)
